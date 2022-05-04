@@ -22,8 +22,6 @@ class OutwardRegisterController extends Controller
         ->join('item_masters','outward_registers.itemid','=','item_masters.id')
         ->select('item_masters.iname','user_masters.uname','outward_registers.quantity','Outward_registers.expiredate','outward_registers.created_at')
         ->get();
-
-
         return view('outwardregister.index', compact('outward'));
     }
 

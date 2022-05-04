@@ -85,7 +85,7 @@ class UserMasterController extends Controller
         }
         else{
             $request->session()->put('uname',$user[0]->uname);
-            return redirect('/home');
+            return redirect('/inwardregister');
         }
        
     }
